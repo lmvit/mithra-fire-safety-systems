@@ -265,7 +265,6 @@
       </div>
     </section><!-- End Testimonials Section -->
 
-    <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container">
 
@@ -448,33 +447,28 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="https://sheetdb.io/api/v1/qgk1rhy3pnqs5" method="POST" class="email-form" id="contact-form">
+            <form action="https://sheetdb.io/api/v1/s2o4n586mzfx5" method="POST" class="email-form" id="contact-form">
               <div>
                 <div class=" form-group">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required
-                    autocomplete="off"> <br>            
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required
-                    autocomplete="off">  <br>             
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required
-                  autocomplete="off"> <br>           
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required
-                  autocomplete="off">
-                </textarea><br> 
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required autocomplete="off"> <br>            
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required autocomplete="off">  <br>             
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required autocomplete="off"> <br>           
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required autocomplete="off"> </textarea><br> 
               <button type="submit">Send Message</button>
                 </div>
                   </div>
             </form>
 
           </div>
+          
 
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
+  </main>
 
-  <!-- ======= Footer ======= -->
   <footer id="footer">
 
     <div class="footer-newsletter">
@@ -568,12 +562,12 @@
 </body>
 
     <script>
-       var form = document.getElementById('contact-form');
+       var form = document.getElementById('my-form');
         form.addEventListener("submit", e => {
         e.preventDefault();
         fetch(form.action, {
           method: "POST",
-          body: new FormData(document.getElementById("contact-form")),
+          body: new FormData(document.getElementById("my-form")),
         }).then(
           response => response.json()
         ).then((html) => {
